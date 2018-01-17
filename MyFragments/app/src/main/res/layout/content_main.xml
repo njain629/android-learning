@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.nam1102.myfragments.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <fragment
+        android:id="@+id/fragment"
+        android:name="com.example.nam1102.myfragments.topsection"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="42dp"
+        tools:layout_editor_absoluteY="34dp"
+        tools:layout="@layout/topsection" />
+
+    <fragment
+        android:id="@+id/fragment2"
+        android:name="com.example.nam1102.myfragments.bottomsection"
+        android:layout_width="383dp"
+        android:layout_height="253dp"
+        tools:layout="@layout/bottomsection"
+        tools:layout_editor_absoluteY="216dp"
+        tools:layout_editor_absoluteX="0dp" />
+</android.support.constraint.ConstraintLayout>
